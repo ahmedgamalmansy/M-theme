@@ -1,0 +1,50 @@
+@media (min-width: 992px)
+{
+    /* start navbar style */
+    .navbar-default .navbar-collapse li
+    {
+        float: left;
+    }
+    
+    .navbar-default .navbar-collapse .nav_links
+    {
+        width: 85%;
+        float: right;
+    }
+    /* end navbar style */
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+    /* start navbar style */
+    .navbar-default .navbar-collapse li
+    {
+        float: left;
+    }
+    .navbar-default .navbar-collapse .nav_links
+    {
+        width: 83%;
+    }
+    /* end navbar style */
+}
+
+
+@media (max-width: 767px)
+{
+    /* start navbar style */
+    .navbar-default .navbar-collapse
+    {
+        border: none;
+        background-color: rgba(1,1,1,.5);
+    }
+    /* end navbar style */
+    
+    /* Start header article style */
+    header h1{
+        font-size: 40px;
+    }
+    header .article p{
+        font-size: 15px;
+    }
+    /* end header article style */
+}
