@@ -1,0 +1,50 @@
+/*================
+Start features style
+==================*/
+
+.features .img img{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.features .content
+{
+    margin-top: 100px;
+}
+.features .content h4
+{
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.features .content>p,
+.features .content div>p
+{
+    color: #fff;
+    font-family: cursive;
+}
+
+.features .content div
+{
+    background: $mainColor;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-top:  20px;
+}
+.one
+{
+    width: 200px;
+}
+.two
+{
+    width: 230px;
+}
+.three
+{
+    width: 250px;
+}
+
+/*================
+End features style
+==================*/

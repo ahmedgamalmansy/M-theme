@@ -36,6 +36,25 @@ footer p{
     color: #fff;
     font-size: 13px;
 }
+
+@media(max-width: 767px)
+{ 
+   
+    
+    /*================
+    Start footer style
+    ==================*/
+    
+    footer .social li
+    {
+        float: none;
+        display: inline-block;
+    }
+    /*================
+    End footer style
+    ==================*/
+}
+
 /*================
 End footer style
 ==================*/

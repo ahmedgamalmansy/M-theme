@@ -1,0 +1,40 @@
+/*=================
+Start loader style
+===================*/
+.preloader{
+    background: linear-gradient( #7f8c8d,#3498db);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    overflow: hidden;
+}
+#preloader_1{
+    display: flex;
+    padding-top: 400px;
+    margin-left: 45%;
+}
+#preloader_1 span{
+    margin-left: 2px;
+    width: 5px;
+    height: 15px;
+    background:#eee;
+    opacity: .8;
+    animation: preloader_1 1s  infinite ease-in-out;
+}
+$var: 0;
+@for $i from 2 through 5{
+    $var: $var+.1;
+    #preloader_1 span:nth-child(#{$i}){
+        animation-delay: #{$var}s;
+    }
+}
+@keyframes preloader_1 {
+    0% { @include transform(scale(1,1));}
+    25% { @include transform(scale(1,2.5));}
+    50% { @include transform(scale(1,1));}
+    100% { @include transform(scale(1,1));}
+}
+/*=================
+End loader style
+===================*/

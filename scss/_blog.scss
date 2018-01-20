@@ -1,0 +1,90 @@
+/*================
+Start blog style
+==================*/
+
+.blog{
+    min-height:300px;
+    position: relative;
+}
+    
+.blog h2{
+    top: 82px;
+    left: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+.blog .blog-title span
+{
+    font-size: $titleSize;
+    width: 100%;
+    text-align: center;
+    color: #777;
+    opacity: .2;
+}
+.blog .blog-title p
+{
+    color: #aaa;
+    font-size: 25px;
+    font-family: cursive;
+    margin-bottom: 50px;
+}
+
+.blog .blog_content div
+{
+    margin-bottom: 40px;
+}
+.blog .blog_content .img
+{
+    margin: auto;
+    height: 250px;
+    overflow: hidden;
+}
+.blog .blog_content .img img
+{
+    transition: all 1s ease;
+}
+.blog .blog_content div:first-Child .img img
+{
+    @include transform(translate(-50px,-50px));
+}
+.blog .blog_content div:nth-child(3) .img img
+{
+    @include transform(translate(-50px,-100px));
+}
+
+.blog .blog_content div:first-Child .img img:hover
+{
+    @include transform(translate(-180px,-30px));
+}
+.blog .blog_content div:nth-child(2) .img img:hover
+{
+    @include transform(translateX(-100px));
+}
+.blog .blog_content div:nth-child(3) .img img:hover
+{
+    @include transform(translate(-250px,-100px));
+}
+.blog .blog_content div:last-Child .img img:hover
+{
+    @include transform(translateX(-100px));
+}
+
+.blog .blog_content h4
+{
+    color: $mainColor;
+    font-size: 18px;
+    font-weight: bold;
+}
+.blog .blog_content p
+{
+    color: #aaa;
+    font-family: cursive;
+}
+
+/*================
+End blog style
+==================*/

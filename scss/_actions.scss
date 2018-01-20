@@ -1,0 +1,30 @@
+/*================
+Start action style
+==================*/
+
+.action{
+    background: $mainColor;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.action .content
+{
+    margin-bottom: 30px;
+}
+.action .content i
+{
+    float: left;
+    padding-right: 30px;
+    color: #fff;
+}
+
+.action .content p
+{
+    font-family: cursive;
+    color: #fff;
+}
+
+/*================
+End action style
+==================*/

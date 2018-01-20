@@ -1,0 +1,20 @@
+@mixin transition($prop,$time,$timing_fun){
+    -webkit-transition: $prop $time $timing_fun;
+    -moz-transition: $prop $time $timing_fun;
+    -o-transition: $prop $time $timing_fun;
+    transition: $prop $time $timing_fun;
+}
+@mixin transform($prop){
+    -webkit-transform: $prop;
+    -moz-transform: $prop;
+    -o-transform: $prop;
+    transform: $prop;
+}
+@each $i in $backgrounds{
+    .#{$i}{
+        background: url('../images/back-#{$i}.jpg') no-repeat;
+        background-size: cover;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

@@ -1,0 +1,222 @@
+/*===================
+Start header style
+====================*/
+header{
+    overflow: hidden;
+    min-height: 500px;
+    
+}
+
+
+//Start navbar Style
+.navbar-default
+{
+    background: none;
+    border: none;
+    margin-top: 5px;
+}
+.navbar-default .navbar-collapse .nav_links
+{
+    width: 85%;
+    float: right;
+}
+
+.navbar-default .navbar-collapse .nav_links .links{
+    float: left;
+}
+
+.navbar-default .navbar-collapse .nav_links .social{
+    float: right;
+}
+
+.navbar-default .navbar-collapse .links li
+{
+    padding: 10px 15px;
+}
+
+.navbar-default .navbar-collapse .social li
+{
+    padding: 10px 5px;
+    cursor: pointer
+}
+
+.navbar-default .navbar-collapse  li a
+{
+    font-size: 17px;
+    text-decoration: none;
+    color: #777;
+}
+.navbar-default .navbar-collapse li:hover a
+{
+    color: #337ab7;
+    text-decoration: none;
+    @include transition(all , .2s , linear);
+}
+.navbar-default .navbar-collapse li:hover i
+{
+    @include transform(scale(1,1));
+    @include transition(all , .3s , linear);
+}
+// End navbar Style 
+
+
+//Start header article style
+header .article
+{
+    margin-top: 120px;
+}
+
+header .article h1
+{
+    color: #d7d7d7;
+    font-size: 110px;
+    font-weight: bold;
+}
+
+header .article p
+{
+    font-size: 30px;
+    color: $mainColor;
+    font-family: cursive;
+}
+
+header .scroll
+{
+    margin-top: 120px;
+    margin-bottom: 200px;
+}
+header .scroll p
+{
+    color: #d7d7d7;
+    font-family: cursive;
+}
+
+header .scroll i
+{
+    position: absolute;
+    margin-left: -15px;
+    font-size: 3em;
+    color: #d7d7d7;
+}
+header .scroll i:hover
+{
+    cursor: pointer;
+    color: $mainColor;
+    animation-name: scrollDown;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    @include transition(all , .3s , linear);
+    
+}
+
+@keyframes scrollDown
+{
+    0%
+    {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    
+    15%
+    {
+        margin-bottom: 0px;
+        margin-top: 12px;
+    }
+    30%
+    {
+        margin-bottom: 12px;
+        margin-top: 0px;
+    }
+    45%
+    {
+        margin-bottom: 0px;
+        margin-top: 8px;
+    }
+    60%
+    {
+        margin-bottom: 8px;
+        margin-top: 0px;
+    }
+    75%
+    {
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+    90%
+    {
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+    100%
+    {
+        margin-bottom: 0px;
+        margin-top: 2px;
+    }
+    
+}
+// End header article style
+
+@media (min-width: 992px)
+{
+    /* start navbar style */
+    .navbar-default .navbar-collapse li
+    {
+        float: left;
+    }
+    
+    .navbar-default .navbar-collapse .nav_links
+    {
+        width: 85%;
+        float: right;
+    }
+    /* end navbar style */
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+    /* start navbar style */
+    .navbar-default .navbar-collapse li
+    {
+        float: left;
+    }
+    .navbar-default .navbar-collapse .nav_links
+    {
+        width: 83%;
+    }
+    /* end navbar style */
+}
+
+@media(max-width: 767px)
+{
+    
+    /*==================
+    start navbar style 
+    ====================*/
+    .navbar-default .navbar-collapse
+    {
+        border: none;
+        background-color: rgba(1,1,1,.5);
+    }
+    /*==================
+    end navbar style 
+    ====================*/
+    
+    /*==================
+    Start header article style 
+    ====================*/
+    
+    header .article h1{
+        font-size: 40px;
+    }
+    header .article p{
+        font-size: 15px;
+    }
+    
+    /*================== 
+    end header article style 
+    ====================*/
+}
+/*===================
+End header style
+====================*/

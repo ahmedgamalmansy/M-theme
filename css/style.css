@@ -19,6 +19,9 @@
   padding-bottom: 50px;
 }
 
+/*=================
+Start loader style
+===================*/
 .preloader {
   background: linear-gradient(#7f8c8d, #3498db);
   height: 100%;
@@ -85,22 +88,27 @@
     transform: scale(1, 1);
   }
 }
-/*==================
-start page style
+/*=================
+End loader style
 ===================*/
+h1, h2, h3, h4, h5, .team .team-title > p {
+  font-family: 'Open Sans';
+}
+
 body, ul {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
 }
 
+/*===================
+Start header style
+====================*/
 header {
   overflow: hidden;
   min-height: 500px;
 }
 
-/* End Header Style */
-/* Start navbar Style */
 .navbar-default {
   background: none;
   border: none;
@@ -155,8 +163,6 @@ header {
   transition: all 0.3s linear;
 }
 
-/* End navbar Style */
-/* Start header article style*/
 header .article {
   margin-top: 120px;
 }
@@ -236,7 +242,61 @@ header .scroll i:hover {
     margin-top: 2px;
   }
 }
-/* End header article style*/
+@media (min-width: 992px) {
+  /* start navbar style */
+  .navbar-default .navbar-collapse li {
+    float: left;
+  }
+
+  .navbar-default .navbar-collapse .nav_links {
+    width: 85%;
+    float: right;
+  }
+
+  /* end navbar style */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* start navbar style */
+  .navbar-default .navbar-collapse li {
+    float: left;
+  }
+
+  .navbar-default .navbar-collapse .nav_links {
+    width: 83%;
+  }
+
+  /* end navbar style */
+}
+@media (max-width: 767px) {
+  /*==================
+  start navbar style 
+  ====================*/
+  .navbar-default .navbar-collapse {
+    border: none;
+    background-color: rgba(1, 1, 1, 0.5);
+  }
+
+  /*==================
+  end navbar style 
+  ====================*/
+  /*==================
+  Start header article style 
+  ====================*/
+  header .article h1 {
+    font-size: 40px;
+  }
+
+  header .article p {
+    font-size: 15px;
+  }
+
+  /*================== 
+  end header article style 
+  ====================*/
+}
+/*===================
+End header style
+====================*/
 /*====================
 Start agency style
 ======================*/
@@ -302,6 +362,29 @@ Start agency style
   font-family: cursive;
 }
 
+@media (max-width: 767px) {
+  /*================== 
+  Start agency style 
+  ====================*/
+  .agency-title {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+  }
+
+  .agency h2 {
+    font-size: 22px;
+    top: 50px;
+  }
+
+  .agency .agency-title span {
+    font-size: 150px;
+  }
+
+  /*================== 
+  end agency style 
+  ====================*/
+}
 /*================
 End agency style
 ==================*/
@@ -351,6 +434,24 @@ End news style
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  /*================== 
+  Start news style 
+  ====================*/
+  .news .left, .news .right {
+    padding-top: 30px;
+  }
+
+  .news .content {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /*================== 
+  end news style 
+  ====================*/
+}
 /*================
 End news style
 ==================*/
@@ -612,6 +713,32 @@ Start team style
   font-weight: bold;
 }
 
+@media (max-width: 767px) {
+  /*================
+  Start team style
+  ==================*/
+  .team .team_content > div {
+    margin: auto;
+    margin-bottom: 50px;
+    margin-left: 25%;
+  }
+
+  /*================
+  End team style
+  ==================*/
+}
+@media (max-width: 480px) {
+  /*================
+  Start team style
+  ==================*/
+  .team .team_content > div {
+    margin-left: 10px;
+  }
+
+  /*================
+  End team style
+  ==================*/
+}
 /*================
 End team style
 ==================*/
@@ -674,6 +801,30 @@ Start contact style
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  /*================
+  Start contact style
+  ==================*/
+  .title {
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .contact h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    top: 50px;
+  }
+
+  .contact .title span {
+    font-size: 150px;
+  }
+
+  /*================
+  End contact style
+  ==================*/
+}
 /*================
 End contact style
 ==================*/
@@ -725,11 +876,21 @@ footer p {
   font-size: 13px;
 }
 
+@media (max-width: 767px) {
+  /*================
+  Start footer style
+  ==================*/
+  footer .social li {
+    float: none;
+    display: inline-block;
+  }
+
+  /*================
+  End footer style
+  ==================*/
+}
 /*================
 End footer style
 ==================*/
-h1, h2, h3, h4, h5, .team .team-title > p {
-  font-family: 'Open Sans';
-}
 
 /*# sourceMappingURL=style.css.map */
