@@ -1,0 +1,54 @@
+.subscribe{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #003459;
+    form{
+        .form-text{
+            position: relative;
+            padding-right: 0px;
+            h4{
+                color: #fff;
+                float: right;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+        .input input{
+            width: 100%;
+            padding: 15px 10px;
+            text-indent: 10px;
+            letter-spacing: 1px;
+            border-radius: 30px;
+            border: none;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+        .submit input{
+            //margin-left: 10px;
+            font-size: 20px;
+            background: transparent;
+            border: 1px solid #eee;
+            padding: 10px 40px;
+            border-radius: 30px;
+            color: #fff;
+            font-family: 'Lato',sans-serif;
+            @include transition(all,.3s,linear);
+            &:hover{
+                background: $mainColor;
+                border-color: $mainColor;
+            }
+        }
+    }
+}
+
+
+/*========================*/
+    //media query
+/*========================*/
+@media (max-width: 991px){
+    .subscribe form .form-text h4{
+        float: none;
+        font-size: 24px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,77 @@
+.contact{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .content{
+        min-height: 500px;
+        .google-map{
+            position: absolute;
+            width: 100%;
+            margin-bottom: 70px;
+            #map{
+                width: 100%;
+                min-height: 500px;
+            }
+        }
+        .contact-form{
+            position: absolute;
+            margin-left: 5%;
+            padding: 55px 30px;
+            width: 35%;
+            background: $mainColor;
+            opacity: .9;
+            z-index: 999;
+            input,textarea,button{
+                width: 100%;
+                padding: 15px 10px;
+                text-indent: 15px;
+                border: 1px solid #005c7f;
+                margin-bottom: 10px;
+                border-radius: 25px;
+            }
+            textarea{
+                padding: 6px 20px;
+                height: 100px;
+            }
+            button{
+                font-size: 20px;
+                color: #fff;
+                background: transparent;
+                border-color: #fff;
+                font-weight: 400;
+                .mr-5{
+                    margin-right: 5px;
+                }
+                @include transition(all , .3s , linear);
+                &:hover{
+                    background: #fff;
+                    color: $mainColor;
+                }
+            }
+        }
+        
+    }
+}
+
+
+/*=====================================*/
+    //media query
+/*=====================================*/
+
+@media (max-width: 991px){
+    .contact .content .contact-form{
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px){
+    .contact .content{
+        .google-map{
+            position: relative;
+        }
+        .contact-form{
+            position: relative;
+            margin-left: 0px;
+            width: 100%;
+        }
+    }
+}

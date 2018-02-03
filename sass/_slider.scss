@@ -1,0 +1,42 @@
+.testimonials{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #f2f3f4;;
+    .content{
+        margin: auto;
+        max-width: 80%;
+        .swiper-container{
+            .swiper-slide{
+                img{
+                    border-radius: 50%;
+                    border: 1px solid $mainColor;
+                }
+                .c_pos{
+                    font-size: 14px;
+                    color: #6d7578;
+                    margin-bottom: 20px;
+                }
+                .c_data{
+                    letter-spacing: 1px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #8d9295;
+                    margin-bottom: 20px;
+                }
+            }
+            .swiper-pagination{
+                span{
+                    width: 12px;
+                    height: 12px;
+                    background: transparent;
+                    border: 1px solid $mainColor;
+                }
+                span.swiper-pagination-bullet-active{
+                    width: 30px;
+                    border-radius: 5px;
+                    background: $mainColor;
+                }
+            }
+        }
+    }
+}

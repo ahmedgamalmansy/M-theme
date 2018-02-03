@@ -1,43 +1,50 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>CREATIVES</title>
+        <title>Mtheme-1</title>
         
-        <link rel="icon" type="image/png" href="images/logobar.png">
+        <link rel="icon" type="image/png" href="images/favicon.ico">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/media-query.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/jquery.circliful.css">
+        <link rel="stylesheet" type="text/css" href="css/main-theme.css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-        
     </head>
-    <body>
-        <!-- Start page loader -->
+    <body data-spy="scroll" data-target=".navbar" data-offset="50" id="body">
+        <!-- start the preloader -->
         
         <div class="preloader text-center">
-            <div id="preloader_1">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
             </div>
         </div>
-        <!-- End page loader -->
         
-        <!-- start page content -->
-        <header class="header">
-            <nav class="navbar navbar-default">
-                <div class="container">
+        <!-- end the preloader -->
+        
+        
+        
+        <!-- start header -->
+        
+        <header>
+            <div class="overley">
+                <!-- start navbar -->
+                <nav class="navbar navbar-default wow fadeInDown">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                                 <span class="sr-only">Toggle navigation</span>
@@ -45,334 +52,1065 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#"><img src="images/logobar.png"></a>
+                            <a class="navbar-brand" href="#"><img src="images/logo-light.png"></a>
                         </div>
-                        <div class="collapse navbar-collapse container" id="bs-example-navbar-collapse-1">
-                            <div class="nav_links">
-                                <ul class="col-md-offset-2 list-unstyled links">
-                                    <li><a href="#">Home</a></li>
-                                    <li id="pages"><a href="#">Pages</a></li>
-                                    <li id="features"><a href="#">Features</a></li>
-                                    <li id="Extensions"><a href="#">Extensions</a></li>
-                                    <li id="Tutorials"><a href="#">Tutorials</a></li>
-                                    <li id="Contact"><a href="#">Contact us</a></li>
-                                </ul>
-                                <ul class="visible-lg list-unstyled social">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right menue">
+                                <li class="active"><a href="#body" id="home">HOME</a></li>
+                                <li><a href="#services" id="services-li">SERVICES</a></li>
+                                <li><a href="#about" id="about-li">ABOUT</a></li>
+                                <li><a href="#portfolio" id="portfolio-li">PORTFOLIO</a></li>
+                                <li><a href="#team" id="team-li">TEAM</a></li>
+                                <li><a href="#pricing" id="pricing-li">PRICING</a></li>
+                                <li><a href="#faq" id="faq-li">FAQ</a></li>
+                                <li><a href="#blog" id="blog-li">BLOG</a></li>
+                                <li><a href="#contact" id="contact-li">CONTACT</a></li>
+                            </ul>
                         </div><!-- /.navbar-collapse -->
+                    </div>
+                </nav>
+                <!-- end navbar -->
+                
+                <!-- start header content -->
+                <div class="content text-center">
+                    <div class="container">
+                        <div class="data">
+                            <h2 class="wow fadeInDown" data-wow-delay="0s">MTHEME</h2>
+                            <h1 class="wow fadeInDown" data-wow-delay=".2s">Multi-Purpose <span>One Page</span> HTML5 Template</h1>
+                            <p class="wow fadeInDown" data-wow-delay=".4s">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc erat dui, bibendum eu tortor in, posuere rutrum turpis. Sed malesuada orci eget vestibulum tincidunt. Nunc blandit auctor metus, a venenatis nisi vestibulum quis.
+                            </p>
+                            <button class="wow fadeInDown" data-wow-delay=".6s">DOWNLOAD</button>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-            <div class="article text-center">
-                <h1>CREATIVES</h1>
-                <p>POWER BY PSD SLIVER.COM</p>
-            </div>
-            <div class="scroll text-center">
-                <p>Scroll-Down</p>
-                <i id="scroll" class="fa fa-chevron-down" aria-hidden="true"></i>
+                <!-- end header content -->
+                <!-- start header footer -->
+                <img src="images/hero-overlay.png">
+                <!-- end header footer -->
             </div>
         </header>
         
-        <!-- Start section agency -->
+        <!-- end header -->
         
-        <section class="agency text-center" id="scroll-section">
+        <!-- start section option box -->
+        
+        <section id="option-box" class="option-box">
+            <div class="options">
+                <h4>Option Box</h4>
+                <p>Color Option</p>
+                <ul class="list-unstyled list-inline">
+                    <li data-value="css/main-theme.css"></li>
+                    <li data-value="css/red-theme.css"></li>
+                    <li data-value="css/second-theme.css"></li>
+                    <li data-value="css/yellow-theme.css"></li>
+                </ul>
+            </div>
+            <div class="option-button">
+                <i class="fa fa-gear fa-fw"></i>
+            </div>
+        </section>
+        
+        <!-- end section option box -->
+        
+        <!-- start section services -->
+        
+        <section id="services" class="services">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-7 col-md-offset-3 col-sm-8 col-sm-offset-2 agency-title">
-                        <span>W</span>
-                        <h2>WE ARE AN AWESOME AGENCY</h2>
+                <div class="title text-center">
+                    <h3>our services</h3>
+                    <div class="title-bottom"></div>
+                    <div class="head">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum diam lorem, sed lobortis neque sodales ut velit dignissim metus.
+                        </p>
                     </div>
                 </div>
-                <div class="row agency_content">
-                    <div class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="icon"><i class="fa fa-pencil-square-o fa-3x" aria-hidden="true"></i></div>
-                        <h3>FEATURE ONE</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="icon"><i class="fa fa-comment-o fa-3x" aria-hidden="true"></i></div>
-                        <h3>FEATURE TWO</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="icon"><i class="fa fa-wrench fa-3x" aria-hidden="true"></i></div>
-                        <h3>FEATURE THREE</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="icon"><i class="fa fa-search fa-3x" aria-hidden="true"></i></div>
-                        <h3>FEATURE FOUR</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <div class="content text-center">
+                    <div class="container"></div>
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-12 block">
+                            <div class="icon">
+                                <i class="fa fa-paint-brush fa-fw"></i>
+                            </div>
+                            <h4>GRAPHIC DESIGN</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum diam lorem, sed lobortis neque sodales ut.</p>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 block">
+                            <div class="icon">
+                                <i class="fa fa-desktop fa-fw"></i>
+                            </div>
+                            <h4>WEB DESIGN</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum diam lorem, sed lobortis neque sodales ut.</p>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 block">
+                            <div class="icon">
+                                <i class="fa fa-code fa-fw"></i>
+                            </div>
+                            <h4>WEB DEVELOPMENT</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum diam lorem, sed lobortis neque sodales ut.</p>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 block">
+                            <div class="icon">
+                                <i class="fa fa-mobile fa-fw"></i>
+                            </div>
+                            <h4>MOBILE DEVELOPMENT</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum diam lorem, sed lobortis neque sodales ut.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
         
-        <!-- End section agency -->
+        <!-- end section services -->
         
-        <!-- Start section news -->
+        <!-- start section About -->
         
-        <section class="news" id="Tutorials-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 col-xs-12 left">
-                        <div class="content">
-                            <p>septemper 10,2016 | in culture</p>
-                            <h3>AKITA INU DOG</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="title text-center">
+                    <h3>ABOUT US</h3>
+                    <div class="title-bottom"></div>
+                    <div class="head">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum diam lorem, sed lobortis neque sodales ut velit dignissim metus.
+                        </p>
                     </div>
-                    <div class="col-md-6 col-xs-12 img">
-                        <img src="images/news1.jpg">
-                    </div>
-                    <div class="col-md-6 col-xs-12 col-md-push-6 right">
-                        <div class="content">
-                            <p>septemper 10,2016 | in culture</p>
-                            <h3>AKITA INU DOG</h3>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-sm-6 aboutUs wow fadeInLeft">
+                            <h3>Who We Are</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Aliquam ut sollicitudin velit. Proin neque ligula, commodo vel lobortis vel, vite spequam in mi. Praesent pharetra, nisi vitae blandit laoreet, diam augue collis sem, ut ultrices libero nunc in dui. Sed bibendum urna sed dolor interdum viverra. Fusce luctus odio at posuere condimentum.
                             </p>
+                            <p>
+                                Fusce in euismod diam, non facilisis ligula. Fusce eu veslum tellus, qus. Donec in finibus elit. Nulla ac dolor ac massa facilisis semper.
+                            </p>
+                            <a href="#" class="btn btn-light-rounded-1 mt-15">LEARN MORE ...</a>
+                        </div>
+                        <div class="col-sm-6 text-center facts wow fadeInRight">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <i class="fa fa-smile-o fa-fw"></i>
+                                    <h2 class="count counter">541</h2>
+                                    <h5>Happy Clients</h5>
+                                </div>
+                                <div class="col-xs-6">
+                                    <i class="fa fa-trophy fa-fw"></i>
+                                    <h2 class="count counter">927</h2>
+                                    <h5>Project Completed</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xs-12 col-md-pull-6 img">
-                        <img src="images/news2.jpg">
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-        
-        <!-- End section news -->
-        
-        <!-- Start section blog -->
-        
-        <section class="blog" id="pages-section">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-7 col-md-offset-3 col-sm-8 col-sm-offset-2 blog-title">
-                        <span>B</span>
-                        <h2>LET'S BLOG  </h2>
-                        <P>We love clean desgn and advanced digital solution</P>
-                    </div>
-                </div>
-                <div class="row blog_content">
-                    <div class="col-lg-3 col-sm-6 col-xs-12">
-                        <div class="img"><img src="images/blog2.jpg"></div>
-                        <h4>FRESH SUMMER CUMMER CAMPAING</h4>
-                        <p>
-                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-xs-12">
-                        <div class="img"><img src="images/blog4.jpg"></div>
-                        <h4>FRESH SUMMER CUMMER CAMPAING</h4>
-                        <p>
-                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-xs-12">
-                        <div class="img"><img src="images/blog3.jpg"></div>
-                        <h4>FRESH SUMMER CUMMER CAMPAING</h4>
-                        <p>
-                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-xs-12">
-                        <div class="img"><img src="images/blog1.jpg"></div>
-                        <h4>FRESH SUMMER CUMMER CAMPAING</h4>
-                        <p>
-                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
         
-        <!-- End section blog -->
+        <!-- end section About -->
         
-        <!-- Start section action -->
+        <!-- start section About -->
         
-        <section class="action">
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="title text-center">
+                    <h3>our portfolio</h3>
+                    <div class="title-bottom"></div>
+                    <div class="head">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum diam lorem, sed lobortis neque sodales ut velit dignissim metus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center links wow fadeInRight animated">
+                <ul class="list-unstyled filters ">
+                    <li class="filtr-button filtr active"><a href="javascript:;" data-filter="all">All</a></li>
+                    <li class="filtr-button filtr"><a href="javascript:;" data-filter="1">Graphic Design</a></li>
+                    <li class="filtr-button filtr"><a href="javascript:;" data-filter="2"> Web Design </a></li>
+                    <li class="filtr-button filtr"><a href="javascript:;" data-filter="3"> Web Development </a></li>
+                    <li class="filtr-button filtr"><a href="javascript:;" data-filter="4"> Mobile Development </a></li>
+                    <li class="filtr-button filtr"><a href="javascript:;" data-filter="5"> Others </a></li>
+                </ul>
+            </div>
+            <div class="wrapper filtr-container">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-3 col-sm-4 col-xs-6 block wow zoomIn filtr-item" data-category="1,2" data-sort="value">
+                            <div class="overley overley-top text-center">
+                                <a href="images/items/01.jpg"  data-caption="write your caption here" data-fancybox="image">
+                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a href="#"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="overley overley-bottom text-center">
+                                <h5>Web Design</h5>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <img src="images/items/01.jpg">
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 block wow zoomIn filtr-item" data-category="3" data-sort="value">
+                            <div class="overley overley-top text-center">
+                                <a href="images/items/02.jpg"  data-caption="write your caption here" data-fancybox="image">
+                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a href="#"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="overley overley-bottom text-center">
+                                <h5>Web Development</h5>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <img src="images/items/02.jpg">
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 block wow zoomIn filtr-item" data-category="1,2" data-sort="value">
+                            <div class="overley overley-top text-center">
+                                <a href="images/items/03.jpg"  data-caption="write your caption here" data-fancybox="image">
+                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a href="#"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="overley overley-bottom text-center">
+                                <h5>Web Design</h5>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <img src="images/items/03.jpg">
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 block wow zoomIn filtr-item" data-category="1,2,4" data-sort="value">
+                            <div class="overley overley-top text-center">
+                                <a href="images/items/04.jpg"  data-caption="write your caption here" data-fancybox="image">
+                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a href="#"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="overley overley-bottom text-center">
+                                <h5>Mobile Development</h5>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <img src="images/items/04.jpg">
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 block wow zoomIn filtr-item" data-category="2,3" data-sort="value">
+                            <div class="overley overley-top text-center">
+                                <a href="images/items/05.jpg"  data-caption="write your caption here" data-fancybox="image">
+                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a href="#"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="overley overley-bottom text-center">
+                                <h5>Web Development</h5>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <img src="images/items/05.jpg">
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 block wow zoomIn filtr-item" data-category="1,4" data-sort="value">
+                            <div class="overley overley-top text-center">
+                                <a href="images/items/06.jpg"  data-caption="write your caption here" data-fancybox="image">
+                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a href="#"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="overley overley-bottom text-center">
+                                <h5>Mobile Development</h5>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <img src="images/items/06.jpg">
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 block wow zoomIn filtr-item" data-category="2,3" data-sort="value">
+                            <div class="overley overley-top text-center">
+                                <a href="images/items/07.jpg"  data-caption="write your caption here" data-fancybox="image">
+                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a href="#"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="overley overley-bottom text-center">
+                                <h5>Web Development</h5>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <img src="images/items/07.jpg">
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 block wow zoomIn filtr-item" data-category="1,2" data-sort="value">
+                            <div class="overley overley-top text-center">
+                                <a href="images/items/08.jpg"  data-caption="write your caption here" data-fancybox="image">
+                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a href="#"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="overley overley-bottom text-center">
+                                <h5>Web Design</h5>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <img src="images/items/08.jpg">
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 block wow zoomIn filtr-item" data-category="5" data-sort="value">
+                            <div class="overley overley-top text-center">
+                                <a href="images/items/09.jpg"  data-caption="write your caption here" data-fancybox="image">
+                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a href="#"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="overley overley-bottom text-center">
+                                <h5>Others</h5>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <img src="images/items/09.jpg">
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 block wow zoomIn filtr-item" data-category="3,5" data-sort="value">
+                            <div class="overley overley-top text-center">
+                                <a href="images/items/10.jpg"  data-caption="write your caption here" data-fancybox="image">
+                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a href="#"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="overley overley-bottom text-center">
+                                <h5>Web Development</h5>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <img src="images/items/10.jpg">
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 block wow zoomIn filtr-item" data-category="1,2,3,5" data-sort="value">
+                            <div class="overley overley-top text-center">
+                                <a href="images/items/11.jpg"  data-caption="write your caption here" data-fancybox="image">
+                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a href="#"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="overley overley-bottom text-center">
+                                <h5>Graphic Design</h5>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            
+                            <img src="images/items/11.jpg">
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 block wow zoomIn filtr-item" data-category="1,2,3,4,5" data-sort="value">
+                            <div class="overley overley-top text-center">
+                                <a href="images/items/12.jpg"  data-caption="write your caption here" data-fancybox="image">
+                                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a href="#"><i class="fa fa-link fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="overley overley-bottom text-center">
+                                <h5>Others</h5>
+                                <p>Lorem ipsum dolor sit</p>
+                            </div>
+                            <img src="images/items/12.jpg">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="load-more text-center">
+                <a href="#" class="btn">LOAD MORE</a>
+            </div>
+            <div class="text-center counter-div" id="counters">
+                <div class="overley"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 block">
+                            <div id="graphic"></div>
+                        </div>
+                        <div class="col-sm-3 block">
+                            <div id="web-design"></div>
+                        </div>
+                        <div class="col-sm-3 block">
+                            <div id="web-develop"></div>
+                        </div>
+                        <div class="col-sm-3 block">
+                            <div id="mobile"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- end section About -->
+        
+        <!-- start section team -->
+        
+        <section id="team" class="team">
+            <div class="container">
+                <div class="title text-center">
+                    <h3>TEAM</h3>
+                    <div class="title-bottom"></div>
+                    <div class="head">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum diam lorem, sed lobortis neque sodales ut velit dignissim metus.
+                        </p>
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <div class="container"></div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="block wow fadeInLeft">
+                                <div class="overley overley-top">
+                                    <ul class="list-inline list-unstyled">
+                                        <li><a href="www.facebook.com" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+                                        <li><a href="www.twitter.com" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+                                        <li><a href="https://plus.google.com/discover" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                                        <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="overley overley-bottom">
+                                    <h2>Josh Clark</h2>
+                                    <p>Co-Founder</p>
+                                </div>
+                                <div class="image">
+                                    <img src="images/team/team-1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="block wow fadeInLeft">
+                                <div class="overley overley-top">
+                                    <ul class="list-inline list-unstyled">
+                                        <li><a href="www.facebook.com" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+                                        <li><a href="www.twitter.com" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+                                        <li><a href="https://plus.google.com/discover" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                                        <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="overley overley-bottom">
+                                    <h2>John Doe</h2>
+                                    <p>Creative Head</p>
+                                </div>
+                                <div class="image">
+                                    <img src="images/team/team-2.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="block wow fadeInLeft">
+                                <div class="overley overley-top">
+                                    <ul class="list-inline list-unstyled">
+                                        <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+                                        <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+                                        <li><a href="https://plus.google.com/discover" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                                        <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="overley overley-bottom">
+                                    <h2>Thomas WOX</h2>
+                                    <p>Sales Head</p>
+                                </div>
+                                <div class="image">
+                                    <img src="images/team/team-3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- end section team -->
+        
+        <!-- start section testimonials -->
+        
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="title text-center">
+                    <h3>testimonials</h3>
+                    <div class="title-bottom"></div>
+                    <div class="head">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum diam lorem, sed lobortis neque sodales ut velit dignissim metus.
+                        </p>
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                
+                                <img src="images/client-image-1.jpg">
+                                <h3>John Smith</h3>
+                                <p class="c_pos">Art Dirrector</p>
+                                <p class="c_data">
+                                    “Aliquam ut sollicitudin velit. Proin neque ligula, commodo vel lobortis vel, vitae spequamv. Praesent pharetra, nisi vitae blandit laoreet, diam augue convallis sem, ut ultrices libero nunc in dui.”
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/client-image-1.jpg">
+                                <h3>John Smith</h3>
+                                <p class="c_pos">Art Dirrector</p>
+                                <p class="c_data">
+                                    “Aliquam ut sollicitudin velit. Proin neque ligula, commodo vel lobortis vel, vitae spequamv. Praesent pharetra, nisi vitae blandit laoreet, diam augue convallis sem, ut ultrices libero nunc in dui.”
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/client-image-1.jpg">
+                                <h3>John Smith</h3>
+                                <p class="c_pos">Art Dirrector</p>
+                                <p class="c_data">
+                                    “Aliquam ut sollicitudin velit. Proin neque ligula, commodo vel lobortis vel, vitae spequamv. Praesent pharetra, nisi vitae blandit laoreet, diam augue convallis sem, ut ultrices libero nunc in dui.”
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination" style="position:relative;"></div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- end section testimonials -->
+        
+        <!-- start clients section -->
+        <section class="clients">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-xs-12 content">
-                        <i class="fa fa-pencil-square-o fa-4x" aria-hidden="true"></i>
-                        <p>
-                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel .
-                        </p>
-                    </div>
-                    <div class="col-md-6 col-xs-12 content">
-                        <i class="fa fa-ils fa-4x" aria-hidden="true"></i>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-                        </p>
+                    <div class="swiper-container-2">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="images/clients/client-1.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/clients/client-2.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/clients/client-3.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/clients/client-4.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/clients/client-5.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/clients/client-6.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- end clients section -->
         
-        <!-- End section action -->
+        <!-- start section pricing -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="title text-center">
+                    <h3>pricing</h3>
+                    <div class="title-bottom"></div>
+                    <div class="head">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum diam lorem, sed lobortis neque sodales ut velit dignissim metus.
+                        </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        
+                        <div class="col-sm-4">
+                            <div class="pricing-table wow fadeInLeft">
+                                <div class="overley overley-top"></div>
+                                <div class="overley overley-bottom"></div>
+                                <div class="price text-center">
+                                    <p>$<span>9.99</span>/month</p>
+                                    <h2>BASIC</h2>
+                                    <h5>20% save dolor sit amet, constur adipiscing elit. Proin erosinterdum lectus.</h5>
+                                </div>
+                                
+                                <div class="capabilities">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fa fa-check checked"></i> 24/7 Customer Care Service
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check checked"></i> 100 MB Disk Space
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check checked"></i> 500 MB Bandwidth
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-times"></i> Powerful Admin Panel
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-times"></i> Fast CDN Networks
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-times"></i> Wordpress Supported
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="text-center choice">
+                                    <button class="btn">Choose Plan</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-4">
+                            <div class="pricing-table wow fadeInLeft">
+                                <div class="overley overley-top"></div>
+                                <div class="overley overley-bottom"></div>
+                                <div class="price text-center">
+                                    <p>$<span>49.99</span>/month</p>
+                                    <h2>STANDARD</h2>
+                                    <h5>20% save dolor sit amet, constur adipiscing elit. Proin erosinterdum lectus.</h5>
+                                </div>
+                                <div class="capabilities">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fa fa-check checked"></i> 24/7 Customer Care Service
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check checked"></i> 100 MB Disk Space
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check checked"></i> 500 MB Bandwidth
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check checked"></i> Powerful Admin Panel
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-times"></i> Fast CDN Networks
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-times"></i> Wordpress Supported
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="text-center choice">
+                                    <button class="btn">Choose Plan</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-4">
+                            <div class="pricing-table wow fadeInLeft">
+                                <div class="overley overley-top"></div>
+                                <div class="overley overley-bottom"></div>
+                                <div class="price text-center">
+                                    <p>$<span>99.99</span>/month</p>
+                                    <h2>UNLIMITED</h2>
+                                    <h5>20% save dolor sit amet, constur adipiscing elit. Proin erosinterdum lectus.</h5>
+                                </div>
+                                <div class="capabilities">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fa fa-check checked"></i> 24/7 Customer Care Service
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check checked"></i> 100 MB Disk Space
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check checked"></i> 500 MB Bandwidth
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check checked"></i> Powerful Admin Panel
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check checked"></i> Fast CDN Networks
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check checked"></i> Wordpress Supported
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="text-center choice">
+                                    <button class="btn">Choose Plan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section pricing -->
         
-        <!-- Start section agency -->
+        <!-- start section FAQ -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="title text-center">
+                    <h3>FAQ</h3>
+                    <div class="title-bottom"></div>
+                    <div class="head">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum diam lorem, sed lobortis neque sodales ut velit dignissim metus.
+                        </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="col-sm-6">
+                        <div class="faq-content wow fadeInLeft">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            Morbi dictum blandit tincidunt nulla?
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"></a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            Morbi dictum blandit tincidunt nulla?
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"></a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            Morbi dictum blandit tincidunt nulla?
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"></a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="video text-center wow fadeInRight">
+                            <div class="image">
+                                <div class="overley"></div>
+                                <img src="images/video-image.jpg">
+                            </div>
+                            <div class="play-icon">
+                                <a href="https://www.youtube.com/watch?v=18wV3Vx9nwA" data-fancybox="video">
+                                    <i class="fa fa-play-circle fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section FAQ -->
         
-        <section class="features" id="features-section">
+        <!-- start section blog -->
+        <section id="blog" class="blog">
+            <div class="container">
+                <div class="title text-center">
+                    <h3>blog</h3>
+                    <div class="title-bottom"></div>
+                    <div class="head">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum diam lorem, sed lobortis neque sodales ut velit dignissim metus.
+                        </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-6">
+                            <div class="block wow fadeInLeft">
+                                <div class="block-image text-center">
+                                    <div class="overley overley-top text-center">
+                                        <ul class="list-unstyled list-inline">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-user"></i> Mtheme
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-clock-o"></i> January 8, 2018
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="overley overley-bottom text-center">
+                                        <ul class="list-unstyled list-inline">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-tags"></i> Mtheme
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-comments"></i> January 8, 2018
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="images/blog/blog-1.jpg">
+                                </div>
+                                <div class="block-content">
+                                    <h4><a href="#">Maecenas Eu Nisi Vestibulum</a></h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum tellus vitasodales. In mi mauris, …
+                                    </p>
+                                </div>
+
+                                <div class="read-more">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-6">
+                            <div class="block wow fadeInLeft">
+                                <div class="block-image text-center">
+                                    <div class="overley overley-top text-center">
+                                        <ul class="list-unstyled list-inline">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-user"></i> Mtheme
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-clock-o"></i> January 8, 2018
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="overley overley-bottom text-center">
+                                        <ul class="list-unstyled list-inline">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-tags"></i> Mtheme
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-comments"></i> January 8, 2018
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="images/blog/blog-2.jpg">
+                                </div>
+                                <div class="block-content">
+                                    <h4><a href="#">Maecenas Eu Nisi Vestibulum</a></h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum tellus vitasodales. In mi mauris, …
+                                    </p>
+                                </div>
+
+                                <div class="read-more">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-6 col-sm-offset-0 col-xs-offset-3">
+                            <div class="block wow fadeInLeft">
+                                <div class="block-image text-center">
+                                    <div class="overley overley-top text-center">
+                                        <ul class="list-unstyled list-inline">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-user"></i> Mtheme
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-clock-o"></i> January 8, 2018
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="overley overley-bottom text-center">
+                                        <ul class="list-unstyled list-inline">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-tags"></i> Mtheme
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-comments"></i> January 8, 2018
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="images/blog/blog-3.jpg">
+                                </div>
+                                <div class="block-content">
+                                    <h4><a href="#">Maecenas Eu Nisi Vestibulum</a></h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum tellus vitasodales. In mi mauris, …
+                                    </p>
+                                </div>
+
+                                <div class="read-more">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section blog -->
+        
+        <!-- start section subscribe -->
+        <section id="subscribe" class="subscribe">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-xs-12 col-sm-push-6 img text-center">
-                        <img src="images/feature-img.png">
-                    </div>
-                    <div class="col-sm-6 col-xs-12 col-sm-pull-6 content">
-                        <h4>Akita Inu Dog</h4>
+                    <form>
+                        <div class="col-sm-5 form-text">
+                            <h4>KEEP IN TOUCH WITH US</h4>
+                        </div>
+                        <div class="col-sm-4 input">
+                            <input type="email" placeholder="enter your email here*">
+                        </div>
+                        <div class="col-sm-2 submit text-center">
+                            <input type="submit" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- end section subscribe -->
+        
+        <!-- start section contact -->
+        <section id="contact" class="contact">
+            <div class="container-fluid">
+                <div class="title text-center">
+                    <h3>contact-us</h3>
+                    <div class="title-bottom"></div>
+                    <div class="head">
                         <p>
-                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum diam lorem, sed lobortis neque sodales ut velit dignissim metus.
                         </p>
-                        <div class="one"><p>Fully Responsive Design</p></div>
-                        <div class="two"><p>High Quality Code</p></div>
-                        <div class="three"><p>Different Headers & Layout</p></div>
+                    </div>
+                </div>
+                <div class="content">
+                                            
+                    <div class="contact-form wow fadeInLeft">
+                        <form>
+                            <input type="text" placeholder="your name">
+                            <input type="email" placeholder="email address*">
+                            <input type="text" placeholder="your subject">
+                            <textarea placeholder="write message*"></textarea>
+                            <button>
+                                <i class="fa fa-send fa-lf mr-5"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="google-map wow bounceInDown wow fadeIn" id="Extensions-section">
+                        <div id="map"></div>
+                        <script>
+                          function initMap() {
+                            var uluru = {lat: 51.507351, lng: -0.127758};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                              zoom: 10,
+                              center: uluru
+                            });
+                          }
+                        </script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApKsaY2daHW8KWNmsxSTRNxZB1nSY6jW8&callback=initMap&region=UK"
+                        async defer></script>
+
                     </div>
                     
                 </div>
             </div>
         </section>
+        <!-- end section contact -->
         
-        <!-- End section agency -->
-        
-        <!-- Start section team -->
-        
-        <section class="team">
-            <div class="container">
-                <div class="row">
-                    <div class="team-title text-center">
-                        <span>T</span>
-                        <h2>OUR TEAM</h2>
-                        <P>sales long tail infuencer pitch release niche market</P>
-                    </div>
-                </div>
-                <div class="row team_content">
-                    <div class="col-lg-3 col-sm-6 col-sm-offset-0">
-                        <div class="img"><img src="images/team1.jpg"></div>
-                        <div class="white">
-                            <h4>JOHN SNOW</h4>
-                            <p>CEO</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-sm-offset-0">
-                        <div class="img"><img src="images/team2.jpg"></div>
-                        <div class="white">
-                            <h4>LADY SANSA</h4>
-                            <p>Webdesigner</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-sm-offset-0">
-                        <div class="img"><img src="images/team3.jpg"></div>
-                        <div class="white">
-                            <h4>DAVID SMITH</h4>
-                            <p>photographer</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-sm-offset-0">
-                        <div class="img">
-                            <img src="images/team4.jpg">
-                        </div>
-                        <div class="white">
-                            <h4>LADY SANSA</h4>
-                            <p>photographer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- End section team -->
-        
-        <!-- Start section contact -->
-        
-        <section class="contact" id="contact-section">
-            <div class="container">
-                <div class="title col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-2 col-sm-12 text-center">
-                    <span>C</span>
-                    <h2>WE'D LOVE TO HEAR ABOUT YOUR PROJECT</h2>
-                </div>
-                <div class="form text-center col-sm-12">
-                    <div class="row">
-                        <form>
-                            <div class="col-sm-4 col-xs-12">
-                                <input type="text" placeholder="Name">
-                            </div>
-                            <div class="col-sm-4 col-xs-12">
-                                <input type="text" placeholder="Email">
-                            </div>
-                            <div class="col-sm-4 col-xs-12">
-                                <input type="text" placeholder="Phone">
-                            </div>
-                            <div class="col-xs-12">
-                                <textarea placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-xs-12">
-                                <button type="submit">SUBMIT</button>
-                            </div>
-                        </form>    
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- End section contact -->
-        
-        <!-- Start section google-map -->
-        
-        <section class="google-map" id="Extensions-section">
-            <div id="map"></div>
-            <script>
-              function initMap() {
-                var uluru = {lat: 51.507351, lng: -0.127758};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                  zoom: 10,
-                  center: uluru
-                });
-                var marker = new google.maps.Marker({
-                  position: uluru,
-                  map: map
-                });
-              }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApKsaY2daHW8KWNmsxSTRNxZB1nSY6jW8&callback=initMap&region=UK"
-            async defer></script>
-            
-        </section>
-        <!-- End section google-map -->
-        <!-- Start footer-->
+        <!-- start footer -->
         <footer>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-sm-4 col-xs-12">
-                        <ul class="list-unstyled social">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <p>&copy; 2016 slive.com - All Right Reserves</p>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <p>Design by : Ahmed Salah</p>
+
+            <div class="contacts text-center">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4 wow slideInLeft">
+                            <i class="fa fa-phone fa-2x"></i>
+                            <span>+02 123456789</span>
+                        </div>
+                        <div class="col-sm-4 wow slideInLeft" data-wow-delay=".5s">
+                            <i class="fa fa-map-marker fa-2x"></i>
+                            <span>27 Phasellus orci tortor</span>
+                        </div>
+                        <div class="col-sm-4 wow slideInLeft" data-wow-delay="1s">
+                            <i class="fa fa-map-marker fa-2x"></i>
+                            <span>example@website.com</span>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="copyright-social text-center">
+                <div class="col-sm-6">
+                    <p>Copyright © 2018 <span>mtheme</span> all right reserved.</p>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="list-unstyled list-inline">
+                        <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram fa-lg"></i></a></li>
+                        <li><a href=""><i class="fa fa-behance fa-lg"></i></a></li>
+                        <li><a href=""><i class="fa fa-github fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
         </footer>
-        <!-- End footer-->
+        <!-- end footer -->
+        <a href="javascript:;" class="scroll_up"><i class="fa fa-caret-up fa-lg"></i></a>
         
+        
+        <!-- start scripts -->
         <script src="js/jquery-2.1.1.js"></script>
         <script src="js/jquery.nicescroll.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/plugins.js"></script>
+        <script src="js/jquery.filterizr.min.js"></script>
+        <script>
+            var filterizd = $('.filtr-container').filterizr({
+            //options object
+            });
+        </script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/jquery.circliful.min.js"></script>
+        <script src="js/custome.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>new WOW().init();</script>
+        
+        <!-- end scipts -->
         
     </body>
 </html>

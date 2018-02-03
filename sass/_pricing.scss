@@ -1,0 +1,103 @@
+.pricing{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .content .pricing-table{
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        width: 100%;
+        position: relative;
+        .price{
+            padding-top: 50px;
+            border-bottom: 1px solid #ddd;
+            p{
+                font-size: 16px;
+                margin-bottom: 50px;
+                span{
+                    font-size: 3em;
+                }
+            }
+            h2{
+                color: $mainColor;
+                font-size: 22px;
+                font-weight: 600;
+            }
+            h5{
+                letter-spacing: 1px;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+        .capabilities{
+            padding: 30px;
+            padding-bottom: 120px;
+            ul{
+                li{
+                    line-height: 24px;
+                    margin-bottom: 10px;
+                    i{
+                        margin-right: 10px;
+                    }
+                    .checked{
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+        .choice{
+            margin-top: 50px;
+            padding-bottom: 20px;
+            position: absolute;
+            width: 100%;
+            button{
+                position: relative;
+                padding: 10px 30px;
+                border: 1px solid $mainColor;
+                border-radius: 24px;
+                font-size: 18px;
+                background: $mainColor;
+                color: #fff;
+                right: 0px;
+                top: -120px;
+                @include transition(all,.3s,linear);
+            }
+        }
+        .overley{
+            position: absolute;
+            width: 100%;
+            min-height: 150px;
+            box-sizing: border-box;
+            //top: -20%;
+            //visibility: hidden;
+            @include transition(visibility,.2s,linear);
+        }
+        .overley-top{
+            background: url($teamOverleyTop);
+            background-size: 100% 100%;
+            padding-top: 30px;
+            top: -150px;
+            @include transition(all,.2s,linear);
+        }
+        .overley-bottom{
+            background: url($teamOverleyBottom);
+            background-size: 100% 100%;
+            bottom: 0;
+            top: 100%;
+            @include transition(all,.2s,linear);
+        }
+        
+        &:hover{
+            .overley-top{
+                top: 0;
+            }
+            .overley-bottom{
+                top: 80%;
+            }
+            .choice button{
+                    background: #fff;
+                    color: #005c7f;
+            }
+            
+        }
+    }
+}

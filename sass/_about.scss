@@ -1,0 +1,76 @@
+.about{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: #f2f3f4;
+    .content {
+        .aboutUs{
+            margin-bottom: 70px;
+            h3{
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 21px;
+                letter-spacing: 1px;
+                font-weight: 300;
+                margin-bottom: 20px;
+            }
+            a{
+                margin-top: 15px;
+                color: $mainColor;
+                border: 1px solid $mainColor;
+                border-radius: 20px;
+                padding: 0px 20px;
+                line-height: 45px;
+                letter-spacing: 3px;
+                font-weight: 500;
+                @include transition(all,.3s,linear);
+                &:hover{
+                    background: $mainColor;
+                    color: #fff;
+                }
+            }
+        }
+        .facts{
+            padding-top: 60px;
+            i{
+                font-size: 50px;
+                color: $mainColor;
+            }
+            h2{
+                font-size: 40px;
+                color: #658399;
+            }
+            h5{
+                font-size: 20px;
+                font-weight: 600;
+                color: #658399;
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+
+
+
+
+
+/*=======================*/
+    //media query
+/*=======================*/
+@media (max-width: 767px){
+    .about .content .aboutUs p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px){
+    .about .content .facts{
+        padding-right: 0px;
+    }
+    .about .content .aboutUs{
+        text-align: center;
+    }
+    .about .content .facts div{
+        width: 100%;
+    }
+}

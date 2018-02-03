@@ -1,0 +1,141 @@
+.portfolio{
+    padding-top: 50px;
+    .links{
+        margin-bottom: 30px;
+        ul li{
+            display: inline-block;
+            margin: 5px;
+            border-radius: 5px;
+            @include transition(all,.5s,linear);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            a{
+                font-size: 16px;
+                color: #344146;
+                text-decoration: none;
+                font-weight: 500;
+                padding: 5px 10px;
+            }
+            &:hover{
+                cursor: pointer;
+                a{
+                    @include transition(color,.3s,linear);
+                    color: $mainColor;
+                }
+            }
+        }
+        ul li.active a{
+            color: $mainColor;
+        }
+    }
+    .wrapper .block{
+        height: 250px;
+        overflow: hidden;
+        padding: 0px;
+        @include transition(all,.2s,linear);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .overley{
+            position: absolute;
+            height: 130px;
+            width: 100%;
+            margin: 0px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            box-sizing: border-box;
+            top: 0;
+            visibility: hidden;
+            @include transition(visibility,.2s,linear);
+        }
+        .overley-top{
+            background: url($filterOverleyTop);
+            background-size: 100% 100%;
+            top: -130px;
+            @include transition(all,.2s,linear);
+            a{
+                padding: 10px;
+                i{
+                    color: #fff;
+                }
+                &:hover{
+                    i{
+                        @include transition(all,.2s,linear);
+                        color: #003459;
+                    }
+                }
+            }
+        }
+        .overley-bottom{
+            background: url($filterOverleyBottom);
+            background-size: 100% 100%;
+            top: 130px;
+            margin-top: 120px;
+            @include transition(all,.2s,linear);
+            h5{
+                font-size: 18px;
+                font-weight: bold;
+                color: #fff;
+            }
+            p{
+                color: #eee;
+                letter-spacing: 1px;
+                font-size: 13px;
+            }
+        }
+        &:hover{
+            cursor: pointer;
+            .overley{
+                visibility: visible;
+            }
+            .overley-top,.overley-bottom{
+                top: 0;
+            }
+        }
+    }
+    .load-more{
+        margin-bottom: 70px;
+        a{
+            margin-top: 15px;
+            color: $mainColor;
+            border: 1px solid $mainColor;
+            border-radius: 20px;
+            padding: 0px 20px;
+            line-height: 45px;
+            letter-spacing: 3px;
+            font-weight: 500;
+            @include transition(all,.3s,linear);
+            &:hover{
+                background: $mainColor;
+                color: #fff;
+            }
+        }
+    }
+    .counter-div{
+        background: url(../images/parallax-bg-1.jpg) center center fixed;
+        background-size: cover;
+        min-height: 500px;
+        position: relative;
+        .overley{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $mainColor;
+            opacity: .5;
+        }
+        .block{
+            margin-top: 70px;
+        }
+    }
+}
+
+
+/*==============================*/
+    //media query
+/*==============================*/
+
+@media (min-width: 991px){
+    
+    
+}

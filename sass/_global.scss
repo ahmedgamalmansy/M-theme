@@ -1,0 +1,111 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden !important;
+}
+h1,h2,h3,h4,h5,p{
+    font-family: 'Lato', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+}
+
+a{
+    &:hover,&:focus{
+        text-decoration: none;
+    }
+    
+}
+
+/*=======================*/
+//sections title
+/*=======================*/
+
+.title{
+    margin: auto;
+    width: 60%;
+}
+.title h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.title .title-bottom{
+    background: url(../images/title-line-shape.png) no-repeat center center;
+    width: 70px;
+    margin: -5px auto;
+    height: 12px;
+}
+.head p{
+    margin-top: 20px;
+    color: #5b646e;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 70px;
+    letter-spacing: 1px;
+}
+
+
+/*=============================*/
+    //scroll top icon
+/*=============================*/
+.scroll_up{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+}
+.scroll_up i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $mainColor;
+    background: $mainColor;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    font-size: 2.3em;
+}
+
+/*=====================================*/
+    //costomize wow js animation
+/*=====================================*/
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+}
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes slideInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+}
+
+/*==============*/
+//media query
+/*==============*/
+@media (max-width: 991px){
+    .container{
+        width: 100%;
+    }
+}

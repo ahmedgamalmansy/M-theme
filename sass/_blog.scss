@@ -1,0 +1,128 @@
+.blog{
+    padding-top: 70px;
+    padding-bottom: 100px;
+    .block{
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        /*======================================*/
+            //start styling block image div
+        /*======================================*/
+        
+        .block-image{
+            position: relative;
+            overflow: hidden;
+            img{
+                width: 100%;
+                min-height: 250px;
+            }
+            .overley{
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                width: 100%;
+                min-height: 65px;
+                box-sizing: border-box;
+                //top: -20%;
+                //visibility: hidden;
+                @include transition(visibility,.2s,linear);
+                a{
+                    color: #fff;
+                    @include transition(all,.2s,linear);
+                    &:hover{
+                        color: #000;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .overley-top{
+                background: url($blogOverleyTop);
+                background-size: 100% 100%;
+                padding-top: 30px;
+                top: -150px;
+                @include transition(all,.2s,linear);
+            }
+            .overley-bottom{
+                background: url($blogOverleyBottom);
+                background-size: 100% 100%;
+                bottom: 0;
+                top: 100%;
+                @include transition(all,.2s,linear);
+                ul{
+                    position: absolute;
+                    bottom: 10px;
+                }
+            }
+        }
+        
+        /*======================================*/
+            //start styling block content div
+        /*======================================*/
+        .block-content{
+            padding: 20px 20px 0;
+            a{
+                color: #344146;
+                font-size: 20px;
+                font-weight: 700;
+                @include transition(all,.2s,linear);
+            }
+            p{
+                font-size: 16px;
+                letter-spacing: 1px;
+                color: #676e71;
+                font-weight: 400;
+            }
+        }
+        
+        /*======================================*/
+            //start styling read more div
+        /*======================================*/
+        .read-more{
+            position: relative;
+            padding: 30px;
+            a{
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                color: #333;
+                font-size: 14px;
+                font-family: 'Lato',sans-serif;
+                @include transition(all,.2s,linear);
+            }
+        }
+        
+        /*======================================*/
+            //start styling the block hover
+        /*======================================*/
+        &:hover{
+            .read-more a ,.block-content a{
+                color: $mainColor;
+            }
+            .overley{
+                    //visibility: visible;
+                }
+                .overley-top{
+                    top: 0;
+                }
+                .overley-bottom{
+                    top: 80%;
+                }
+        }
+        
+    }
+}
+
+
+
+/*======================================*/
+    //media query
+/*======================================*/
+@media (max-width: 480px){
+    .blog .col-xs-6{
+        width: 100%;
+    }
+    .blog .col-xs-offset-3{
+        margin: 0px;
+    }
+}

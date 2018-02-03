@@ -1,0 +1,85 @@
+.team{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    .block{
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        // image style
+        img{
+            width: 100%;
+        }
+        //overall overley style
+        .overley{
+            position: absolute;
+            width: 100%;
+            min-height: 100px;
+            box-sizing: border-box;
+            
+            //visibility: hidden;
+            @include transition(visibility,.2s,linear);
+        }
+        //overlay top style
+        .overley-top{
+            background: url($teamOverleyTop);
+            background-size: 100% 100%;
+            padding-top: 30px;
+            //top: -130px;
+            top: -25%;
+            @include transition(all,.2s,linear);
+            li{
+                width: 40px;
+                height: 40px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                i{
+                    color: #fff;
+                    line-height: 40px;
+                    overflow: hidden;
+                }
+                a{
+                    width: 40px;
+                }
+                &:hover{
+                    background: #fff;
+                    @include transition(all,.2s,linear);
+                    i{
+                        color: #000;
+                        @include transition(all,.2s,linear);
+                    }
+                }
+            }
+        }
+        //overlay bottom style
+        .overley-bottom{
+            background: url($teamOverleyBottom);
+            background-size: 100% 100%;
+            bottom: 0;
+            top: 100%;
+            @include transition(all,.2s,linear);
+            h2{
+                color: #fff;
+                font-size: 22px;
+                font-weight: 700;
+            }
+            p{
+                color: #eee;
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+        }
+        &:hover{
+            .overley-top{
+                top: 0;
+            }
+            .overley-bottom{
+                top: 80%;
+            }
+        }
+    }
+}
+
+
+
